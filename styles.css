@@ -352,6 +352,34 @@ footer {
     color: #007BFF;
 }
 
+/* Zurück nach oben Button */
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+#back-to-top i {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    margin-top: .5rem;
+}
+
+#back-to-top:hover {
+    background-color: grey;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .about-content {

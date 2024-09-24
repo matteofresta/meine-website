@@ -15,6 +15,27 @@ navToggle.addEventListener('click', () => {
     }
 });
 
+// Zurück nach oben Button
+const backToTopButton = document.getElementById('back-to-top');
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 // GSAP e ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 

@@ -1,136 +1,152 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <title>Il Tuo Nome | Sviluppatore Software</title>
-  <meta name="description" content="Portfolio di Il Tuo Nome, specializzato in HTML, CSS e JavaScript.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Foglio di stile CSS -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome per le icone -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-  <!-- LottiePlayer per le animazioni -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-</head>
-<body>
-<!-- Navigazione -->
-<header>
-  <nav>
-    <div class="logo">Matteo Fresta</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">Chi Sono</a></li>
-      <li><a href="#projects">Progetti</a></li>
-      <li><a href="#contact">Contatti</a></li>
-    </ul>
-    <!-- Toggle per la navigazione mobile -->
-    <div class="nav-toggle">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
-</header>
-
-<!-- Sezione Hero -->
-<section id="home" class="hero-section">
-  <!-- Video di sfondo -->
-  <video autoplay muted loop id="background-video">
-    <source src="videos/853750-hd_1920_1080_25fps.mp4" type="video/mp4">
-    Il tuo browser non supporta i video HTML5.
-  </video>
-
-  <!-- Overlay per un migliore contrasto -->
-  <div class="video-overlay"></div>
-
-  <!-- Contenuto della Hero Section -->
-  <div class="hero-content">
-    <h1>Ciao, sono <span>Matteo Fresta</span></h1>
-    <p>Sviluppatore Software specializzato in <span id="typed"></span></p>
-    <a href="#contact" class="btn">Contattami</a>
-  </div>
-</section>
-
-<!-- Contenuto principale -->
-<main>
-  <!-- Chi Sono -->
-  <section id="about" class="parallax">
-    <h2>Chi Sono</h2>
-    <div class="about-content">
-      <img src="bilder/matteo-fresta.1024x1024.jpg" alt="Matteo Fresta">
-      <div class="about-text">
-        <p>Io mi chiamo Matteo Fresta</p>
-        <!-- Elenco delle tue competenze -->
-        <h3>Competenze:</h3>
-        <ul>
-          <li>HTML5 & CSS3</li>
-          <li>JavaScript (ES6+)</li>
-          <li>Responsive Web Design</li>
-          <!-- Altre competenze -->
-        </ul>
+  <head>
+    <meta charset="UTF-8">
+    <title>Il Tuo Nome | Sviluppatore Software</title>
+    <meta name="description" content="Portfolio di Il Tuo Nome, specializzato in HTML, CSS e JavaScript.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Foglio di stile CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <!-- LottiePlayer per le animazioni -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Script principale -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+  <!-- Navigazione -->
+  <header>
+    <nav>
+      <div class="logo">Matteo Fresta</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Chi Sono</a></li>
+        <li><a href="#projects">Progetti</a></li>
+        <li><a href="#contact">Contatti</a></li>
+      </ul>
+      <!-- Toggle per la navigazione mobile -->
+      <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
       </div>
+    </nav>
+  </header>
+
+  <!-- Sezione Hero -->
+  <section id="home" class="hero-section">
+    <!-- Video di sfondo -->
+    <video autoplay muted loop id="background-video">
+      <source src="videos/853750-hd_1920_1080_25fps.mp4" type="video/mp4">
+      Il tuo browser non supporta i video HTML5.
+    </video>
+
+    <!-- Overlay per un migliore contrasto -->
+    <div class="video-overlay"></div>
+
+    <!-- Contenuto della Hero Section -->
+    <div class="hero-content">
+      <h1>Ciao, sono <span>Matteo Fresta</span></h1>
+      <p>Sviluppatore Software specializzato in <span id="typed"></span></p>
+      <a href="#contact" class="btn">Contattami</a>
     </div>
   </section>
 
-  <!-- Progetti -->
-  <section id="projects" class="parallax">
-    <h2>Progetti</h2>
-    <div class="projects-container">
-      <!-- Progetto 1 -->
-      <div class="project">
-        <img src="bilder/Bildschirmfoto%202024-09-20%20um%2016.27.34.png" alt="Norma Website">
-        <div class="project-info">
-          <h3>Norma website</h3>
-          <p>Breve descrizione del progetto, tecnologie utilizzate e il tuo ruolo.</p>
-          <a href="https://github.com/matteofresta/norma-supermarket.git" target="_blank" class="btn">GitHub</a>
-          <a href="https://norma-supermarket.netlify.app/" target="_blank" class="btn">Live Demo</a>
+  <!-- Contenuto principale -->
+  <main>
+    <!-- Chi Sono -->
+    <section id="about" class="parallax">
+      <h2>Chi Sono</h2>
+      <div class="about-content">
+        <img src="bilder/matteo-fresta.1024x1024.jpg" alt="Matteo Fresta">
+        <div class="about-text">
+          <p>Io mi chiamo Matteo Fresta</p>
+          <!-- Elenco delle tue competenze -->
+          <h3>Competenze:</h3>
+          <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Web Design</li>
+            <li>Corsi su HTML5 / CSS3 / JavaScript Udemy</li>
+          </ul>
         </div>
       </div>
-      <!-- Progetto 2 -->
-      <div class="project">
-        <img src="bilder/Bildschirmfoto%202024-09-23%20um%2012.47.05.png" alt="Norma Website">
-        <div class="project-info">
-          <h3>Netto Website</h3>
-          <p>Breve descrizione del progetto, tecnologie utilizzate e il tuo ruolo.</p>
-          <a href="https://github.com/matteofresta/norma-supermarket.git" target="_blank" class="btn">GitHub</a>
-          <a href="https://norma-supermarket.netlify.app/" target="_blank" class="btn">Live Demo</a>
+    </section>
+
+    <!-- Progetti -->
+    <section id="projects" class="parallax">
+      <h2>Progetti</h2>
+      <div class="projects-container">
+        <!-- Progetto 1 -->
+        <div class="project">
+          <img src="bilder/Bildschirmfoto%202024-09-20%20um%2016.27.34.png" alt="Norma Website">
+          <div class="project-info">
+            <h3>Norma website</h3>
+            <p>Norma Website, Responsive Design e pronto per l'uso</p>
+            <a href="https://github.com/matteofresta/norma-supermarket.git" target="_blank" class="btn">GitHub</a>
+            <a href="https://norma-supermarket.netlify.app/" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <!-- Progetto 2 -->
+        <div class="project">
+          <img src="bilder/Bildschirmfoto%202024-09-23%20um%2012.47.05.png" alt="Norma Website">
+          <div class="project-info">
+            <h3>Netto Website</h3>
+            <p>Netto Website, Responsive Design e pronto per l'uso</p>
+            <a href="https://github.com/matteofresta/netto-supermarket.git" target="_blank" class="btn">GitHub</a>
+            <a href="https://netto-supermarket.netlify.app/" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <!-- Progetto 3 -->
+        <div class="project">
+          <img src="bilder/Bildschirmfoto%202024-09-24%20um%2010.55.29.png" alt="M.ET.I.C Website">
+          <div class="project-info">
+            <h3>M.ET.I.C</h3>
+            <p>M.ET.I.C Website, Responsive Design e pronto per l'uso</p>
+            <a href="hhttps://github.com/matteofresta/M.ET.I.C.git" target="_blank" class="btn">GitHub</a>
+            <a href="https://metic-fresta.netlify.app/" target="_blank" class="btn">Live Demo</a>
+          </div>
         </div>
       </div>
+    </section>
+
+
+    <!-- Contatti -->
+    <section id="contact" class="parallax">
+      <h2>Contatti</h2>
+      <form action="mailto:tua-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Il Tuo Nome" required>
+        <input type="email" name="email" placeholder="La Tua Email" required>
+        <textarea name="message" placeholder="Il Tuo Messaggio" required></textarea>
+        <button type="submit" class="btn">Invia</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-media">
+      <a href="https://github.com/matteofresta" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.xing.com/profile/Matteo_Fresta5" target="_blank"><i class="fab fa-xing"></i></a>
+      <!-- Altri social media -->
     </div>
-  </section>
+    <p>&copy; 2023 Il Tuo Nome. Tutti i diritti riservati.</p>
+  </footer>
 
-  <!-- Contatti -->
-  <section id="contact" class="parallax">
-    <h2>Contatti</h2>
-    <form action="mailto:tua-email@example.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Il Tuo Nome" required>
-      <input type="email" name="email" placeholder="La Tua Email" required>
-      <textarea name="message" placeholder="Il Tuo Messaggio" required></textarea>
-      <button type="submit" class="btn">Invia</button>
-    </form>
-  </section>
-</main>
+  <!-- Zurück nach oben Button -->
+  <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
 
-<!-- Footer -->
-<footer>
-  <div class="social-media">
-    <a href="https://github.com/matteofresta" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.xing.com/profile/Matteo_Fresta5" target="_blank"><i class="fab fa-xing"></i></a>
-    <!-- Altri social media -->
-  </div>
-  <p>&copy; 2023 Il Tuo Nome. Tutti i diritti riservati.</p>
-</footer>
-
-<!-- Script esterni -->
-<!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-<!-- ScrollTrigger Plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-<!-- Typed.js -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<!-- Particles.js -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<!-- Script principale -->
-<script src="script.js"></script>
-</body>
+  <!-- Script esterni -->
+  <!-- Translator.js -->
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <!-- ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </body>
 </html>
